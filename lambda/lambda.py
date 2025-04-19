@@ -11,7 +11,7 @@ def lambda_handler(event, context):
         ]
     )
 
-    PublicDnsName = response["Reservations"][0]["Instances"][0]["NetworkInterfaces"][0]["Association"]["PublicDnsName"]
+    #PublicDnsName = response["Reservations"][0]["Instances"][0]["NetworkInterfaces"][0]["Association"]["PublicDnsName"]
     private_ip_address = response["Reservations"][0]["Instances"][0]["NetworkInterfaces"][0]["PrivateDnsName"]
     STATE = response["Reservations"][0]["Instances"][0]["State"]["Name"]
 
